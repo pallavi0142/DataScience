@@ -1,0 +1,5 @@
+property_id,photo_urls
+1,"['https://example.com/photo1.jpg', 'https://example.com/photo2.jpg']"
+2,"['https://example.com/photo1.jpg']"
+3,"[]"
+...

@@ -1,0 +1,19 @@
+import pandas as pd
+import glob
+
+# Assuming all CSV files are in the 'data' folder
+all_files = glob.glob('data/*.csv')
+
+# List to hold DataFrames
+df_list = []
+
+# Read each file and append to the list
+for file in all_files:
+    df = pd.read_csv(file)
+    df_list.append(df)
+
+# Concatenate all DataFrames into one
+final_df = pd.concat(df_list, ignore_index=True)
+
+# Show the final merged DataFrame
+print(final_df.head())
